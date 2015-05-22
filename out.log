@@ -1,0 +1,16 @@
+('i = ', 0, 't = ', 0)
+0:  |F(x)| = 2.39012e+06; step 1; tol 0.0189446
+1:  |F(x)| = 84903.6; step 1; tol 0.00113568
+2:  |F(x)| = 2564.72; step 1; tol 0.000821243
+3:  |F(x)| = 0.467071; step 1; tol 2.98488e-08
+4:  |F(x)| = 0.0212491; step 1; tol 0.00186277
+5:  |F(x)| = 0.0194278; step 0.312818; tol 0.752328
+6:  |F(x)| = 0.00803714; step 1; tol 0.509398
+7:  |F(x)| = 0.00027279; step 1; tol 0.233538
+8:  |F(x)| = 0.000154581; step 1; tol 0.288999
+9:  |F(x)| = 9.4306e-05; step 1; tol 0.334974
+10:  |F(x)| = 5.1824e-06; step 1; tol 0.100987
+>
+/home/voila/Documents/2014GRAD/numpad/test/navierstokes.py(307)<module>()
+-> fh = open('out.log')
+(Pdb)
