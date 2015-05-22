@@ -30,13 +30,6 @@ sys.path.append('../..')
 from numpad import *
 import unittest
 
-class TestMain(unittest.TestCase):
-    def Setup(self):
-        xs = np.linspace(0,1,N)
-        ys = xs.copy()
-        self.u_x, self.u_y = np.meshgrid(xs, ys)
-        self.p = self.u_x.copy()
-        
 
 def make_array(u):
     u_x = zeros([N+1, N+2])
@@ -111,11 +104,6 @@ def calculate_rhs_u_x(p):
 
 
 
-
-
-
-
-
 #
 #          u_x[0,0]           u_x[1,0]           u_x[2,0]
 #
@@ -141,6 +129,7 @@ def calculate_rhs_u_x(p):
 #  u_y[0,N]   ----- u_y[1,N] --------- u_y[2,N] ---------
 #                                                        
 #         u_x[0,N+1]         u_x[1,N+1]         u_x[2,N+1]
+
 def expand_u_y(u_y):
     u_y_expanded = zeros([u_y.shape[0] + 2,u_y.shape[1] + 2])
     u_y_expanded[1:-1,1:-1] = u_y
@@ -290,4 +279,5 @@ for iteration in range(5):
 
     if iteration % 1 == 0:
         contourf(np.sqrt(u_mag_interior._value))
+        colorbar()
         show()
